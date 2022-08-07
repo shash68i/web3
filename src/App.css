@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 48px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toast-message {
+  color: #6cc92e;
+  font-weight: 600;
+  margin-bottom: 2px;
+  opacity: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toast-show {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 3rem;
+  gap: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+.top-input {
+  width: 70%;
+  height: 88%;
+  outline: "none";
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-button {
+  width: 29%;
+  height: 100%;
+}
+
+.spinner {
+  width: 42px;
+  height: 42px;
+}
+
+.section-bottom {
+  display: flex;
+  width: 100%;
+  height: 32rem;
+  gap: 1%;
+  margin-top: 12px;
+}
+
+.section-fetch-contract {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.fetch-button {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 3rem;
+}
+
+/* .fetched-data {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-top: none;
+} */
+
+.section-fetch-events {
+  width: 69%;
+  border: 1px solid black;
+}
+
+.event-list {
+  font-size: 1.5rem;
+  padding-top: 6px;
+  text-align: center;
+  height: 2.5rem;
+  border-bottom: 1px solid black;
+}
+
+.fetched-events {
+  padding: 10px;
 }
